@@ -1,0 +1,417 @@
+body {
+    padding: 0;
+    height: 0;
+    font-family: "Maven Pro", sans-serif;
+
+}
+
+.header-bg {
+    background-repeat: no-repeat !important;
+    background-image: url('../img/Header-1200x200-1920w.webp') !important;
+    background-size: cover !important;
+
+}
+
+
+
+.header {
+    transition: all 0.5s ease;
+}
+
+.hide-elements .logo,
+.hide-elements .contact-info {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.hide-elements .logo img,
+.hide-elements .contact-info img,
+.hide-elements .contact-info p {
+    display: none;
+}
+
+.contact-info,
+.logo {
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+.maven {
+    font-family: "Maven Pro", sans-serif !important;
+}
+
+.u_1836350805,
+.u_18363508052,
+.u_18363508053 {
+    position: relative;
+    padding-top: 320px !important;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* Ensure the zoom effect doesn't go outside the anchor */
+}
+
+.u_1836350805::before,
+.u_18363508052::before,
+.u_18363508053::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s ease-out;
+    z-index: -1;
+    /* Ensure the image is behind the content */
+}
+
+.u_1836350805::before {
+    background-image: url('../img/IMG_6008-1280w.webp');
+}
+
+.u_18363508052::before {
+    background-image: url('../img/62177185_909927336025029_8481879498369794048_n-1280w.webp');
+}
+
+.u_18363508053::before {
+    background-image: url('../img/IMG_5096-1280w.webp');
+}
+
+.card-1:hover .u_1836350805::before,
+.card-1:hover .u_18363508052::before,
+.card-1:hover .u_18363508053::before {
+    transform: scale(1.1);
+}
+
+
+.btnn {
+    max-width: 140px;
+    background-color: #6d8d23;
+    border-radius: 6px;
+    margin: 10px 0;
+    color: white;
+    line-height: 22px;
+    cursor: pointer;
+    box-shadow: none;
+    background-image: none;
+    padding: 0;
+    height: auto;
+    border-style: solid;
+    white-space: nowrap;
+    transition: background-color .2s ease, border-color .2s ease;
+    clear: both;
+    position: relative;
+    padding: 10px 20px !important;
+
+}
+
+.btnn span {
+
+    font-size: 18px;
+    font-weight: normal;
+    font-family: "Maven Pro", sans-serif !important;
+    transition: color .2s ease;
+}
+
+.btnn:hover {
+    background-color: rgba(224, 223, 223, 1);
+    color: rgba(100, 100, 100, 1);
+}
+
+.service {
+    padding: 30px 40px 30px 70px;
+}
+
+.lisst li {
+    position: relative;
+}
+
+.lisst li::after {
+    content: '';
+    display: block;
+    /* Ensure the pseudo-element is a block */
+    width: 100%;
+    height: 1px;
+    background-color: #d1d1d1;
+    /* Change color to your preferred border color */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.u_1083801561 {
+    background-color: rgba(255, 255, 255, 1) !important;
+    background-repeat: no-repeat !important;
+    background-image: url('../img/ehr-Picture1-1920w.webp') !important;
+    background-size: cover !important;
+
+    padding: 30px 70px 30px 40px !important;
+    background-position: 50% 50% !important;
+}
+
+.color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .25);
+    display: block;
+}
+
+.sliderr {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    /* Set a height to make sure the slider container has height */
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    /* Ensure each slide takes full height */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.flex-direction-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.flex-prev,
+.flex-next {
+    cursor: pointer;
+}
+
+
+
+/* Hamburger Button Styles */
+.hamburger__slice {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: currentColor;
+    transition: transform .3s ease-out, opacity .4s ease-out;
+}
+
+.hamburger__slice:nth-child(1) {
+    transform-origin: top left;
+}
+
+.hamburger__slice:nth-child(2) {
+    opacity: 1;
+}
+
+.hamburger__slice:nth-child(3) {
+    transform-origin: bottom left;
+}
+
+/* Open State Styles */
+.hamburger.open .hamburger__slice:nth-child(1) {
+    transform: rotate(45deg) translateY(7px);
+}
+
+.hamburger.open .hamburger__slice:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open .hamburger__slice:nth-child(3) {
+    transform: rotate(-45deg) translateY(-7px);
+}
+
+/* Mobile Menu Styles */
+#mobile-menu {
+    transform: translateY(-100%);
+}
+
+#mobile-menu.open {
+    transform: translateY(0);
+}
+
+
+
+.carddd {
+    position: relative;
+    min-height: 225px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.image-link {
+    position: relative;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.image-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s ease-out;
+    z-index: -1;
+    /* Ensure the image is behind the content */
+}
+
+.u_18363508051 .image-link::before {
+    background-image: url('../img/IMG_5096-1920w.webp');
+}
+
+.u_183635080512 .image-link::before {
+    background-image: url('../img/IMG_5900-1920w.webp');
+}
+
+.u_183635080513 .image-link::before {
+    background-image: url('../img/IMG_5599-1920w.webp');
+}
+
+.u_1836350805125 .image-link::before {
+    background-image: url('../img/IMG_6040-resized-1920w.webp');
+}
+
+.u_1836350805124 .image-link::before {
+    background-image: url('../img/EPC-SolarFarm-HVServices-Goondiwindi-1920w.jpg');
+}
+
+.carddd:hover .image-link::before {
+    transform: scale(1.1);
+}
+
+
+.group:hover .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.transition-transform {
+    transition: transform 0.3s;
+}
+
+.contact-info:hover .call-icon {
+    content: url('../img/phone-call.png');
+}
+
+.group:hover .group-hover\:block {
+    display: block;
+}
+
+
+.muted {
+    color: #939895;
+    font-weight: normal !important;
+}
+
+.main-content h1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.main-content h2 {
+    color: #6D8D23;
+    font-size: 24px;
+}
+
+.headin2 {
+    color: #646464;
+    font-weight: 700;
+}
+
+
+.table {
+    width: 100%;
+}
+
+.table tbody tr th {
+    text-align: left;
+    padding: 1rem;
+    color: #939895;
+    font-weight: normal !important;
+}
+
+.table tbody tr td {
+    text-align: left;
+    padding: 1rem;
+    color: #939895;
+    font-weight: normal !important;
+}
+
+
+.main-content ul {
+    margin-left: 36px;
+}
+
+.main-content ul li {
+    list-style-type: disc;
+    color: #939895;
+}
+
+.main-content p {
+    color: #646464;
+}
+
+.main-content strong {
+    color: #646464;
+    display: block;
+
+}
+
+.main-content h4 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+@media(max-width:500px) {
+    .service {
+        padding: 20px 15px;
+    }
+
+    .u_1083801561 {
+        margin: 0 !important;
+        padding: 150px 0 !important;
+        min-height: 100px;
+    }
+
+    .sliderr {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 250px;
+        /* Set a height to make sure the slider container has height */
+    }
+}
+
+@media(max-width:800px) {
+
+    .sliderr {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 250px;
+        /* Set a height to make sure the slider container has height */
+    }
+}
